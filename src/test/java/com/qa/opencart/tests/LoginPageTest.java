@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseTest {
 	public void loginTest() throws InterruptedException {
 		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		String accountPageTitle = loginPage.getAccountPageTitle();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		Assert.assertEquals(accountPageTitle,AppConstants.ACCOUNTS_PAGE_TITLE);
 		
 	}
